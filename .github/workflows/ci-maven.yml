@@ -25,3 +25,6 @@ jobs:
 
       - name: Build && Install amoeba-spring-boot
         run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
+
+      - name: Build && Install amoeba-spring-initializr
+        run: cd tools/initializr/java/amoeba-spring-initializr && ./mvnw install -B
