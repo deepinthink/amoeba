@@ -4,6 +4,8 @@
 # Jetbrains IDEA
 .idea/
 *.iml
+!tools/ide-support/java/amoeba-idea/.idea
+!tools/ide-support/java/amoeba-idea/amoeba-idea.iml
 
 # Apache Maven
 target/
