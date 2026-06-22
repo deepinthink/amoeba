@@ -28,9 +28,10 @@ import org.springframework.util.StringUtils;
 public class SpringAmoebaEnvironmentPostProcessor implements EnvironmentPostProcessor, Ordered {
 
   public static final String SPRING_AMOEBA_DEFAULT_PROPERTY_SOURCE =
-      "springAmoebaDefaultProperties";
-  public static final String SPRING_AMOEBA_VERSION = "spring-amoeba.version";
-  public static final String SPRING_AMOEBA_FORMATTED_VERSION = "spring-amoeba.formatted-version";
+      "amoeba.spring-boot.default-properties";
+  public static final String SPRING_AMOEBA_VERSION = "amoeba.spring-boot.version";
+  public static final String SPRING_AMOEBA_FORMATTED_VERSION =
+      "amoeba.spring-boot.formatted-version";
   public static final int ORDER = Ordered.LOWEST_PRECEDENCE - 100;
 
   @Override

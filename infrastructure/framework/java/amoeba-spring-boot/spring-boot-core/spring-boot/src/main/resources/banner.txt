@@ -10,5 +10,5 @@ ${AnsiColor.BRIGHT_GREEN}
 
 ${AnsiColor.BRIGHT_RED}
 Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
-Spring Amoeba Version: ${spring-amoeba.version}${spring-amoeba.formatted-version}
+Spring Amoeba Version: ${amoeba.spring-boot.version}${amoeba.spring-boot.formatted-version}
 ${AnsiColor.DEFAULT}
