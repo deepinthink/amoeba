@@ -29,6 +29,9 @@ jobs:
       - name: Build && Install amoeba-specification-benchmark
         run: cd specification/benchmark/java/amoeba-specification-benchmark && ./mvnw install -B
 
+      - name: Build && Install amoeba-specification-component
+        run: cd specification/component/java/amoeba-specification-component && ./mvnw install -B
+
       - name: Build && Install amoeba-specification-pipeline
         run: cd specification/pipeline/java/amoeba-specification-pipeline && ./mvnw install -B
 
