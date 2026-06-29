@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/amoeba-idea.iml" filepath="$PROJECT_DIR$/amoeba-idea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../specification/benchmark/java/amoeba-specification-benchmark/amoeba-specification-benchmark.iml" filepath="$PROJECT_DIR$/../../../specification/benchmark/java/amoeba-specification-benchmark/amoeba-specification-benchmark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../specification/benchmark/java/amoeba-specification-benchmark/specification-benchmark-dependencies/specification-benchmark-dependencies.iml" filepath="$PROJECT_DIR$/../../../specification/benchmark/java/amoeba-specification-benchmark/specification-benchmark-dependencies/specification-benchmark-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../specification/benchmark/java/amoeba-specification-benchmark/specification-benchmark-parent/specification-benchmark-parent.iml" filepath="$PROJECT_DIR$/../../../specification/benchmark/java/amoeba-specification-benchmark/specification-benchmark-parent/specification-benchmark-parent.iml" />
     </modules>
   </component>
 </project>

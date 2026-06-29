@@ -3,16 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>spring-boot-benchmark-parent</artifactId>
+    <artifactId>specification-external-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>spring-boot-benchmark-parent/pom.xml</relativePath>
+    <relativePath>specification-external-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>amoeba-spring-boot-benchmark</artifactId>
+  <artifactId>amoeba-specification-external</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-benchmark-dependencies</module>
-    <module>spring-boot-benchmark-parent</module>
-    <module>spring-boot-benchmark-starters</module>
+    <module>specification-external-dependencies</module>
+    <module>specification-external-parent</module>
   </modules>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
