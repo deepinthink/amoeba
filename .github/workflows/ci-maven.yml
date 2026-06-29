@@ -26,17 +26,14 @@ jobs:
       - name: Build && Install amoeba-spring-boot
         run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
 
-      - name: Build && Install amoeba-specification-benchmark
-        run: cd specification/benchmark/java/amoeba-specification-benchmark && ./mvnw install -B
+      - name: Build && Install amoeba-specification-external
+        run: cd specification/external/java/amoeba-specification-external && ./mvn install -B
 
       - name: Build && Install amoeba-specification-component
         run: cd specification/component/java/amoeba-specification-component && ./mvnw install -B
 
       - name: Build && Install amoeba-specification-pipeline
         run: cd specification/pipeline/java/amoeba-specification-pipeline && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-benchmark
-        run: cd infrastructure/benchmark/java/amoeba-spring-boot-benchmark && ./mvnw install -B
 
       - name: Build && Install amoeba-spring-boot-component
         run: cd infrastructure/component/java/amoeba-spring-boot-component && ./mvnw install -B
