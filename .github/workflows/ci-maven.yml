@@ -20,12 +20,6 @@ jobs:
       - name: Build && Install amoeba-maven
         run: cd tools/buildtools/java/amoeba-maven && ./mvnw install -B
 
-      - name: Build && Install amoeba-external
-        run: cd infrastructure/external/java/amoeba-external && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot
-        run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
-
       - name: Build && Install amoeba-specification-external
         run: cd specification/external/java/amoeba-specification-external && ./mvn install -B
 
@@ -34,6 +28,12 @@ jobs:
 
       - name: Build && Install amoeba-specification-pipeline
         run: cd specification/pipeline/java/amoeba-specification-pipeline && ./mvnw install -B
+
+      - name: Build && Install amoeba-external
+        run: cd infrastructure/external/java/amoeba-external && ./mvnw install -B
+
+      - name: Build && Install amoeba-spring-boot
+        run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
 
       - name: Build && Install amoeba-spring-boot-component
         run: cd infrastructure/component/java/amoeba-spring-boot-component && ./mvnw install -B
