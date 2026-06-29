@@ -23,14 +23,14 @@ jobs:
       - name: Build && Install amoeba-specification-external
         run: cd specification/external/java/amoeba-specification-external && ./mvnw install -B
 
+      - name: Build && Install amoeba-external
+        run: cd infrastructure/external/java/amoeba-external && ./mvnw install -B
+
       - name: Build && Install amoeba-specification-component
         run: cd specification/component/java/amoeba-specification-component && ./mvnw install -B
 
       - name: Build && Install amoeba-specification-pipeline
         run: cd specification/pipeline/java/amoeba-specification-pipeline && ./mvnw install -B
-
-      - name: Build && Install amoeba-external
-        run: cd infrastructure/external/java/amoeba-external && ./mvnw install -B
 
       - name: Build && Install amoeba-spring-boot
         run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
