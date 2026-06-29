@@ -21,7 +21,7 @@ jobs:
         run: cd tools/buildtools/java/amoeba-maven && ./mvnw install -B
 
       - name: Build && Install amoeba-specification-external
-        run: cd specification/external/java/amoeba-specification-external && ./mvn install -B
+        run: cd specification/external/java/amoeba-specification-external && ./mvnw install -B
 
       - name: Build && Install amoeba-specification-component
         run: cd specification/component/java/amoeba-specification-component && ./mvnw install -B
