@@ -10,7 +10,7 @@
   <artifactId>maven-springboot-parent</artifactId>
   <packaging>pom</packaging>
   <properties>
-    <spring-boot.version>4.0.0</spring-boot.version>
+    <spring-boot.version>4.1.0</spring-boot.version>
   </properties>
   <dependencyManagement>
     <dependencies>
