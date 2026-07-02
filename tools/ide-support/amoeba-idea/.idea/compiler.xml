@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot" />
+        <module name="specification-external-socket" />
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-starter" />
       </profile>

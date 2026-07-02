@@ -5,16 +5,16 @@
     <groupId>org.deepinthink.amoeba</groupId>
     <artifactId>specification-external-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>specification-external-parent/pom.xml</relativePath>
+    <relativePath>../specification-external-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>amoeba-specification-external</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-    <module>specification-external-dependencies</module>
-    <module>specification-external-parent</module>
-    <module>specification-external-socket</module>
-  </modules>
+  <artifactId>specification-external-socket</artifactId>
   <properties>
-    <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
+    <spotless.license-header.file>${project.basedir}/../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-buffer</artifactId>
+    </dependency>
+  </dependencies>
 </project>
