@@ -16,28 +16,16 @@
 package org.deepinthink.amoeba.external.socket;
 
 import io.netty.buffer.ByteBuf;
-import io.netty.util.ReferenceCounted;
+import io.netty.buffer.ByteBufAllocator;
+import java.net.SocketAddress;
 
-public interface Payload extends ReferenceCounted {
-  boolean hasMetadata();
+public interface DuplexConnection extends Availability, GracefulCloseable {
 
-  ByteBuf sliceMetadata();
+  void sendFrame(ByteBuf frame);
 
-  ByteBuf sliceData();
+  void sendErrorAndClose(SocketErrorException errorException);
 
-  ByteBuf data();
+  ByteBufAllocator alloc();
 
-  ByteBuf metadata();
-
-  @Override
-  Payload retain();
-
-  @Override
-  Payload retain(int increment);
-
-  @Override
-  Payload touch();
-
-  @Override
-  Payload touch(Object hint);
+  SocketAddress remoteAddress();
 }

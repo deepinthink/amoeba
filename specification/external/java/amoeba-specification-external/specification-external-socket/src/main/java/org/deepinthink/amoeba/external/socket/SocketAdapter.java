@@ -15,35 +15,34 @@
  */
 package org.deepinthink.amoeba.external.socket;
 
-import static java.util.concurrent.CompletableFuture.failedStage;
+import static java.util.concurrent.CompletableFuture.failedFuture;
 
 import java.util.concurrent.CompletionStage;
 
 final class SocketAdapter {
-
-  private static final CompletionStage<Void> UNSUPPORTED_FIRE_AND_FORGET =
-      failedStage(new UnsupportedInteractionException("Fire-and-Forget"));
-  private static final CompletionStage<Payload> UNSUPPORTED_REQUEST_RESPONSE =
-      failedStage(new UnsupportedInteractionException("Request-Response"));
-  private static final CompletionStage<Void> UNSUPPORTED_METADATA_PUSH =
-      failedStage(new UnsupportedInteractionException("Metadata-Push"));
+  static final CompletionStage<Void> UNSUPPORTED_FIRE_AND_FORGET =
+      failedFuture(new UnsupportedInteractionException("Fire-and-Forget"));
+  static final CompletionStage<Payload> UNSUPPORTED_REQUEST_RESPONSE =
+      failedFuture(new UnsupportedInteractionException("Request-Response"));
+  static final CompletionStage<Void> UNSUPPORTED_METADATA_PUSH =
+      failedFuture(new UnsupportedInteractionException("Metadata-Push"));
 
   static CompletionStage<Void> fireAndForget(Payload payload) {
     payload.release();
-    return SocketAdapter.UNSUPPORTED_FIRE_AND_FORGET;
+    return UNSUPPORTED_FIRE_AND_FORGET;
   }
 
   static CompletionStage<Payload> requestResponse(Payload payload) {
     payload.release();
-    return SocketAdapter.UNSUPPORTED_REQUEST_RESPONSE;
+    return UNSUPPORTED_REQUEST_RESPONSE;
   }
 
-  public static CompletionStage<Void> metadataPush(Payload payload) {
+  static CompletionStage<Void> metadataPush(Payload payload) {
     payload.release();
-    return SocketAdapter.UNSUPPORTED_METADATA_PUSH;
+    return UNSUPPORTED_METADATA_PUSH;
   }
 
-  private static class UnsupportedInteractionException extends RuntimeException {
+  static class UnsupportedInteractionException extends RuntimeException {
     UnsupportedInteractionException(String interactionName) {
       super(interactionName + " not implemented.", null, false, false);
     }

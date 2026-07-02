@@ -15,17 +15,16 @@
  */
 package org.deepinthink.amoeba.external.socket;
 
-import static java.util.concurrent.CompletableFuture.completedStage;
-
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 import java.util.function.Function;
 
 public interface SocketAcceptor {
 
-  CompletionStage<Socket> accept(SetupPayload setup, Socket sending);
+  CompletionStage<Socket> accept(SetupPayload payload, Socket sending);
 
   static SocketAcceptor with(Socket socket) {
-    return (setup, sending) -> completedStage(sending);
+    return (setup, sending) -> CompletableFuture.completedStage(socket);
   }
 
   static SocketAcceptor forFireAndForget(Function<Payload, CompletionStage<Void>> handler) {

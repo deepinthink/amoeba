@@ -15,29 +15,8 @@
  */
 package org.deepinthink.amoeba.external.socket;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.util.ReferenceCounted;
+import java.util.concurrent.CompletionStage;
 
-public interface Payload extends ReferenceCounted {
-  boolean hasMetadata();
-
-  ByteBuf sliceMetadata();
-
-  ByteBuf sliceData();
-
-  ByteBuf data();
-
-  ByteBuf metadata();
-
-  @Override
-  Payload retain();
-
-  @Override
-  Payload retain(int increment);
-
-  @Override
-  Payload touch();
-
-  @Override
-  Payload touch(Object hint);
+public interface GracefulCloseable {
+  CompletionStage<Void> onClose();
 }

@@ -23,6 +23,8 @@ public abstract class SetupPayload extends AbstractReferenceCounted implements P
 
   public abstract String dataMimeType();
 
+  public abstract int keepAliveInterval();
+
   @Override
   public SetupPayload retain() {
     super.retain();

@@ -15,29 +15,29 @@
  */
 package org.deepinthink.amoeba.external.socket;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.util.ReferenceCounted;
+public class SocketErrorException extends RuntimeException {
 
-public interface Payload extends ReferenceCounted {
-  boolean hasMetadata();
+  private final int errorCode;
 
-  ByteBuf sliceMetadata();
+  public SocketErrorException(int errorCode, String message) {
+    this(errorCode, message, null);
+  }
 
-  ByteBuf sliceData();
+  public SocketErrorException(int errorCode, String message, Throwable cause) {
+    super(message, cause);
+    this.errorCode = errorCode;
+  }
 
-  ByteBuf data();
-
-  ByteBuf metadata();
-
-  @Override
-  Payload retain();
-
-  @Override
-  Payload retain(int increment);
+  public int getErrorCode() {
+    return errorCode;
+  }
 
   @Override
-  Payload touch();
-
-  @Override
-  Payload touch(Object hint);
+  public String toString() {
+    return getClass().getSimpleName()
+        + " (0x"
+        + Integer.toHexString(errorCode)
+        + "): "
+        + getMessage();
+  }
 }

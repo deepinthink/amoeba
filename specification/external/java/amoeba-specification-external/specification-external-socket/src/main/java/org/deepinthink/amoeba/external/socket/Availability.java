@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.deepinthink.amoeba.external.socket.frame.decoder;
+package org.deepinthink.amoeba.external.socket;
 
-import io.netty.buffer.ByteBuf;
-import java.util.function.Function;
-import org.deepinthink.amoeba.external.socket.Payload;
+public interface Availability {
 
-public interface PayloadDecoder extends Function<ByteBuf, Payload> {}
+  double availability();
+}

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/amoeba-idea.iml" filepath="$PROJECT_DIR$/amoeba-idea.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../specification/external/java/amoeba-specification-external/specification-external-socket/specification-external-socket.iml" filepath="$PROJECT_DIR$/../../../specification/external/java/amoeba-specification-external/specification-external-socket/specification-external-socket.iml" />
     </modules>
   </component>
 </project>
