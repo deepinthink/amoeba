@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0          http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.deepinthink.amoeba</groupId>
+    <artifactId>external-parent</artifactId>
+    <version>2026.5.0-SNAPSHOT</version>
+    <relativePath>external-parent/pom.xml</relativePath>
+  </parent>
+  <artifactId>amoeba-external</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>external-dependencies</module>
+    <module>external-parent</module>
+  </modules>
+  <properties>
+    <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
+  </properties>
+</project>
