@@ -20,5 +20,8 @@ jobs:
       - name: Build && Install amoeba-maven
         run: cd tools/buildtools/java/amoeba-maven && ./mvnw install -B
 
+      - name: Build && Install amoeba-external
+        run: cd infrastructure/external/java/amoeba-external && ./mvnw install -B
+
       - name: Build && Install amoeba-spring-boot
         run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
