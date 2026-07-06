@@ -1,0 +1,3 @@
+# Environment Post Processors
+org.springframework.boot.EnvironmentPostProcessor=\
+org.deepinthink.amoeba.spring.boot.env.SpringAmoebaEnvironmentPostProcessor
