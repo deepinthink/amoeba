@@ -43,3 +43,6 @@ jobs:
 
       - name: Build && Install amoeba-spring-boot-pipeline
         run: cd infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
+
+      - name: Build && Install amoeba-benchmark
+        run: cd templates/benchmark/java/amoeba-benchmark && ./mvnw install -B
