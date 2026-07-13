@@ -34,3 +34,6 @@ jobs:
 
       - name: Build && Install amoeba-spring-boot-component
         run: cd infrastructure/component/java/amoeba-spring-boot-component && ./mvnw install -B
+
+      - name: Build && Install amoeba-spring-boot-pipeline
+        run: cd infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
