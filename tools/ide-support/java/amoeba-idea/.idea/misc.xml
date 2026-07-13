@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/../../../../infrastructure/framework/java/amoeba-spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../infrastructure/component/java/amoeba-spring-boot-component/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../specification/pipeline/java/amoeba-specification-pipeline/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../infrastructure/pipeline/java/amoeba-spring-boot-pipeline/pom.xml" />
       </list>
     </option>
   </component>
