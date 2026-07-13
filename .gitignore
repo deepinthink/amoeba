@@ -7,3 +7,5 @@ target/
 # Jetbrains IDEA
 .idea/
 *.iml
+!tools/ide-support/java/amoeba-idea/.idea
+!tools/ide-support/java/amoeba-idea/*.iml
