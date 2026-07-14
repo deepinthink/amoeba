@@ -46,3 +46,6 @@ jobs:
 
       - name: Build && Install amoeba-benchmark
         run: cd templates/benchmark/java/amoeba-benchmark && ./mvnw install -B
+
+      - name: Build && Install amoeba-initializr
+        run: cd tools/initializr/java/amoeba-initializr && ./mvnw install -B
