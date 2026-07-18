@@ -3,14 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>spring-boot-component-parent</artifactId>
+    <artifactId>maven-springboot-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>../spring-boot-component-parent/pom.xml</relativePath>
+    <relativePath/>
   </parent>
-  <artifactId>spring-boot-component-starters</artifactId>
+  <artifactId>spring-boot-component-config</artifactId>
   <packaging>pom</packaging>
-  <modules>
-    <module>spring-boot-component-starter-config-client</module>
-    <module>spring-boot-component-starter-config-server</module>
-  </modules>
 </project>

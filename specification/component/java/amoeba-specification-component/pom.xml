@@ -10,6 +10,7 @@
   <artifactId>amoeba-specification-component</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>specification-component-config</module>
     <module>specification-component-dependencies</module>
     <module>specification-component-parent</module>
   </modules>
