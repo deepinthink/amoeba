@@ -12,5 +12,7 @@
   <modules>
     <module>spring-boot-component-starter-config-client</module>
     <module>spring-boot-component-starter-config-server</module>
+    <module>spring-boot-component-starter-job-client</module>
+    <module>spring-boot-component-starter-job-server</module>
   </modules>
 </project>
