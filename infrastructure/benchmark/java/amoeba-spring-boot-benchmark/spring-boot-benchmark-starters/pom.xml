@@ -9,4 +9,7 @@
   </parent>
   <artifactId>spring-boot-benchmark-starters</artifactId>
   <packaging>pom</packaging>
+  <modules>
+    <module>spring-boot-benchmark-starter-server</module>
+  </modules>
 </project>

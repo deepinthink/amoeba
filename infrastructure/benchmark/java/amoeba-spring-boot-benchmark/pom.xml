@@ -10,8 +10,10 @@
   <artifactId>amoeba-spring-boot-benchmark</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-benchmark-client</module>
     <module>spring-boot-benchmark-dependencies</module>
     <module>spring-boot-benchmark-parent</module>
+    <module>spring-boot-benchmark-server</module>
     <module>spring-boot-benchmark-starters</module>
   </modules>
   <properties>
