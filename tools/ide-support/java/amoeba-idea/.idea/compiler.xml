@@ -6,15 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot" />
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-starter" />
+        <module name="spring-boot" />
         <module name="spring-boot-component-starter-config-server" />
         <module name="spring-boot-component-starter-config-client" />
+        <module name="spring-boot-component-starter-job-client" />
+        <module name="spring-boot-component-starter-job-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-boot-component-parent (1)" target="25" />
-    </bytecodeTargetLevel>
   </component>
 </project>
