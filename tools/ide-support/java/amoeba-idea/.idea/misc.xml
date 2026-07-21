@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/../../../../infrastructure/benchmark/java/amoeba-spring-boot-benchmark/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../templates/devops/java/amoeba-devops/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../templates/benchmark/java/amoeba-benchmark/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../specification/service/java/amoeba-specification-service/pom.xml" />
       </list>
     </option>
   </component>
