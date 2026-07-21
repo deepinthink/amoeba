@@ -12,6 +12,7 @@
   <modules>
     <module>spring-boot-service-dependencies</module>
     <module>spring-boot-service-parent</module>
+    <module>spring-boot-service-rbac</module>
     <module>spring-boot-service-starters</module>
   </modules>
   <properties>

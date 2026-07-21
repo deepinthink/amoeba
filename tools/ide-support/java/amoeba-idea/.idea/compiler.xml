@@ -9,12 +9,15 @@
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-starter" />
         <module name="benchmark-server" />
+        <module name="spring-boot-service-starter-rbac-client" />
         <module name="spring-boot-component-starter-job-client" />
         <module name="spring-boot" />
         <module name="spring-boot-benchmark-starter-server" />
         <module name="spring-boot-component-starter-config-server" />
         <module name="spring-boot-component-starter-config-client" />
+        <module name="spring-boot-service-starter-rbac-server" />
         <module name="spring-boot-component-starter-job-server" />
+        <module name="devops-rbac-server" />
       </profile>
     </annotationProcessing>
   </component>

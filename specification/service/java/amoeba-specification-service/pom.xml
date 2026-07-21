@@ -12,6 +12,7 @@
   <modules>
     <module>specification-service-dependencies</module>
     <module>specification-service-parent</module>
+    <module>specification-service-rbac</module>
   </modules>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>

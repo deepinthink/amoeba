@@ -7,10 +7,6 @@
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath>../spring-boot-service-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>spring-boot-service-starters</artifactId>
+  <artifactId>spring-boot-service-rbac</artifactId>
   <packaging>pom</packaging>
-  <modules>
-    <module>spring-boot-service-starter-rbac-client</module>
-    <module>spring-boot-service-starter-rbac-server</module>
-  </modules>
 </project>
