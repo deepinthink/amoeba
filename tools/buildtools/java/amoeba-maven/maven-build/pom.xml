@@ -15,6 +15,7 @@
     <protoc.version>3.25.8</protoc.version>
     <grpc.version>1.80.0</grpc.version>
     <mockito.version>5.23.0</mockito.version>
+    <vaadin.version>25.2.2</vaadin.version>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
     <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
     <templating-maven-plugin.version>3.1.0</templating-maven-plugin.version>
