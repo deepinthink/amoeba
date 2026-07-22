@@ -11,5 +11,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>spring-boot-vaadin</module>
+    <module>spring-boot-vaadin-admin</module>
   </modules>
 </project>

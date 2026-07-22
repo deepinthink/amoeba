@@ -24,6 +24,7 @@ import java.util.Map;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.ConstructorArgumentValues;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
+import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.type.AnnotationMetadata;
 
@@ -47,6 +48,12 @@ public class VaadinScanPackagesRegistrar implements ImportBeanDefinitionRegistra
                 : new LinkedList<>(Arrays.asList(existPackages));
         packageList.addAll(Arrays.asList(packages));
         valueHolder.setValue(packageList.toArray(new String[0]));
+      } else {
+        GenericBeanDefinition beanDefinition = new GenericBeanDefinition();
+        beanDefinition.getConstructorArgumentValues().addIndexedArgumentValue(0, packages);
+        beanDefinition.setBeanClassName(VAADIN_SCAN_PACKAGES_CLASS);
+        beanDefinition.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
+        registry.registerBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS, beanDefinition);
       }
     }
   }

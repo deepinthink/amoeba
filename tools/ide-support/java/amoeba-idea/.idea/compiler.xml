@@ -17,13 +17,16 @@
         <module name="spring-boot-starter-vaadin" />
         <module name="spring-boot" />
         <module name="spring-boot-component-starter-config-server" />
+        <module name="spring-boot-starter-vaadin-admin" />
         <module name="spring-boot-component-starter-config-client" />
         <module name="spring-boot-service-starter-rbac-server" />
         <module name="devops-rbac-server" />
+        <module name="spring-boot-vaadin-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-starter (1)" target="25" />
+      <module name="spring-boot-starter-vaadin-sample" target="25" />
     </bytecodeTargetLevel>
   </component>
 </project>
