@@ -7,10 +7,9 @@
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath>../spring-boot-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>spring-boot-starters</artifactId>
+  <artifactId>spring-boot-modules</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-starter</module>
-    <module>spring-boot-starter-vaadin</module>
+    <module>spring-boot-vaadin</module>
   </modules>
 </project>
