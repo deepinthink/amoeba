@@ -30,11 +30,18 @@ public class VaadinAdminProperties {
   @NestedConfigurationProperty
   private final VaadinAdminHeaderProperties header = new VaadinAdminHeaderProperties();
 
+  @NestedConfigurationProperty
+  private final VaadinAdminSecurityProperties security = new VaadinAdminSecurityProperties();
+
   public VaadinAdminLoginProperties getLogin() {
     return login;
   }
 
   public VaadinAdminHeaderProperties getHeader() {
     return header;
+  }
+
+  public VaadinAdminSecurityProperties getSecurity() {
+    return security;
   }
 }
