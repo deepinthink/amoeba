@@ -16,21 +16,46 @@
 package org.deepinthink.amoeba.spring.boot.vaadin.admin.autoconfigure;
 
 import com.vaadin.flow.spring.security.AuthenticationContext;
+import com.vaadin.flow.spring.security.VaadinSecurityConfigurer;
+import java.util.List;
 import org.deepinthink.amoeba.spring.boot.vaadin.EnableVaadin;
-import org.deepinthink.amoeba.spring.boot.vaadin.admin.views.VaadinAdminHeaderView;
-import org.deepinthink.amoeba.spring.boot.vaadin.admin.views.VaadinAdminMainLayout;
-import org.deepinthink.amoeba.spring.boot.vaadin.admin.views.VaadinAdminSideNavItemSupplier;
+import org.deepinthink.amoeba.spring.boot.vaadin.admin.views.*;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.util.CollectionUtils;
 
 @AutoConfiguration
 @EnableVaadin(VaadinAdminProperties.PREFIX_VIEWS)
 @EnableConfigurationProperties(VaadinAdminProperties.class)
 public class VaadinAdminAutoConfiguration {
+
+  @Bean
+  @Scope("prototype")
+  @ConditionalOnMissingBean
+  public VaadinAdminLoginView vaadinAdminLoginView(VaadinAdminProperties properties) {
+    return new VaadinAdminLoginView(properties.getLogin());
+  }
+
+  @Bean
+  @Scope("prototype")
+  @ConditionalOnMissingBean
+  public VaadinAdminMainView vaadinAdminMainView() {
+    return new VaadinAdminMainView();
+  }
 
   @Bean
   @Scope("prototype")
@@ -48,5 +73,45 @@ public class VaadinAdminAutoConfiguration {
       VaadinAdminHeaderView header,
       ObjectProvider<VaadinAdminSideNavItemSupplier> provider) {
     return new VaadinAdminMainLayout(context, header, provider);
+  }
+
+  @Configuration(proxyBeanMethods = false)
+  @ConditionalOnClass({HttpSecurity.class, VaadinSecurityConfigurer.class})
+  public static class VaadinAdminSecurityConfiguration {
+
+    @Bean
+    @ConditionalOnMissingBean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) {
+      return http.with(
+              VaadinSecurityConfigurer.vaadin(), c -> c.loginView(VaadinAdminLoginView.class))
+          .build();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public PasswordEncoder passwordEncoder() {
+      return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public UserDetailsService userDetailsService(
+        VaadinAdminProperties adminProperties, PasswordEncoder passwordEncoder) {
+      VaadinAdminSecurityProperties properties = adminProperties.getSecurity();
+      if (CollectionUtils.isEmpty(properties.getUsers())) {
+        return new InMemoryUserDetailsManager();
+      }
+      List<UserDetails> users =
+          properties.getUsers().stream()
+              .map(
+                  user ->
+                      User.builder()
+                          .username(user.getUsername())
+                          .password(passwordEncoder.encode(user.getPassword()))
+                          .authorities(user.getAuthorities())
+                          .build())
+              .toList();
+      return new InMemoryUserDetailsManager(users);
+    }
   }
 }

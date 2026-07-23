@@ -17,11 +17,11 @@ package org.deepinthink.amoeba.spring.boot.vaadin.admin.views;
 
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.sidenav.SideNav;
-import com.vaadin.flow.router.Route;
 import com.vaadin.flow.spring.security.AuthenticationContext;
+import jakarta.annotation.security.PermitAll;
 import org.springframework.beans.factory.ObjectProvider;
 
-@Route
+@PermitAll
 public class VaadinAdminMainLayout extends AppLayout {
 
   public VaadinAdminMainLayout(
