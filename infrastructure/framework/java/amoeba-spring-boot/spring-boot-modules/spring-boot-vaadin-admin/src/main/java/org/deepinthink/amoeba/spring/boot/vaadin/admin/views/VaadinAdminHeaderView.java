@@ -18,18 +18,18 @@ package org.deepinthink.amoeba.spring.boot.vaadin.admin.views;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.spring.security.AuthenticationContext;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import org.deepinthink.amoeba.spring.boot.vaadin.admin.autoconfigure.VaadinAdminHeaderProperties;
 
-public class VaadinAdminHeaderView extends VerticalLayout {
+public class VaadinAdminHeaderView extends HorizontalLayout {
 
   public VaadinAdminHeaderView(
       AuthenticationContext context, VaadinAdminHeaderProperties properties) {
     H1 logo = new H1(properties.getTitle());
     logo.addClassNames(LumoUtility.FontSize.LARGE, LumoUtility.Margin.MEDIUM);
-    setDefaultHorizontalComponentAlignment(FlexComponent.Alignment.CENTER);
+    setDefaultVerticalComponentAlignment(FlexComponent.Alignment.CENTER);
     expand(logo);
     setWidthFull();
     addClassNames(LumoUtility.Padding.Vertical.NONE, LumoUtility.Padding.Horizontal.MEDIUM);

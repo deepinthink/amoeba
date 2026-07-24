@@ -9,3 +9,6 @@ target/
 *.iml
 !tools/ide-support/java/amoeba-idea/.idea
 !tools/ide-support/java/amoeba-idea/*.iml
+
+# Vaadin
+frontend
