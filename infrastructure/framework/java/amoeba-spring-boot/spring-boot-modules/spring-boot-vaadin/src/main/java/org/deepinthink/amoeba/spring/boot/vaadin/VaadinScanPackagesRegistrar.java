@@ -17,10 +17,7 @@ package org.deepinthink.amoeba.spring.boot.vaadin;
 
 import jakarta.annotation.Nonnull;
 import java.lang.annotation.Annotation;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.ConstructorArgumentValues;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
@@ -36,25 +33,32 @@ public class VaadinScanPackagesRegistrar implements ImportBeanDefinitionRegistra
   public void registerBeanDefinitions(
       @Nonnull AnnotationMetadata annotationMetadata, @Nonnull BeanDefinitionRegistry registry) {
     String[] packages = getPackages(annotationMetadata, EnableVaadin.class, "value");
-    if (packages.length > 0) {
-      if (registry.containsBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS)) {
-        BeanDefinition beanDefinition = registry.getBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS);
-        ConstructorArgumentValues.ValueHolder valueHolder =
-            beanDefinition.getConstructorArgumentValues().getIndexedArgumentValues().get(0);
+    if (packages.length == 0) {
+      return;
+    }
+    Set<String> packageSet = new LinkedHashSet<>(Arrays.asList(packages));
+    if (registry.containsBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS)) {
+      BeanDefinition beanDefinition = registry.getBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS);
+      ConstructorArgumentValues.ValueHolder valueHolder =
+          beanDefinition.getConstructorArgumentValues().getIndexedArgumentValue(0, String[].class);
+      if (valueHolder != null) {
         String[] existPackages = (String[]) valueHolder.getValue();
-        List<String> packageList =
-            existPackages == null
-                ? new LinkedList<>()
-                : new LinkedList<>(Arrays.asList(existPackages));
-        packageList.addAll(Arrays.asList(packages));
-        valueHolder.setValue(packageList.toArray(new String[0]));
-      } else {
-        GenericBeanDefinition beanDefinition = new GenericBeanDefinition();
-        beanDefinition.getConstructorArgumentValues().addIndexedArgumentValue(0, packages);
-        beanDefinition.setBeanClassName(VAADIN_SCAN_PACKAGES_CLASS);
-        beanDefinition.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
-        registry.registerBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS, beanDefinition);
+
+        // Merge paths: keep existing paths first, append new ones without duplicates to maintain
+        // order
+        if (existPackages != null) {
+          Set<String> mergerdSet = new LinkedHashSet<>(Arrays.asList(existPackages));
+          mergerdSet.addAll(packageSet);
+          packageSet = mergerdSet;
+        }
+        valueHolder.setValue(packageSet.toArray(new String[0]));
       }
+    } else {
+      GenericBeanDefinition beanDefinition = new GenericBeanDefinition();
+      beanDefinition.getConstructorArgumentValues().addIndexedArgumentValue(0, packages);
+      beanDefinition.setBeanClassName(VAADIN_SCAN_PACKAGES_CLASS);
+      beanDefinition.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
+      registry.registerBeanDefinition(VAADIN_SCAN_PACKAGES_CLASS, beanDefinition);
     }
   }
 
