@@ -10,6 +10,7 @@
   <artifactId>amoeba-specification-service</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>specification-service-admin</module>
     <module>specification-service-dependencies</module>
     <module>specification-service-parent</module>
     <module>specification-service-rbac</module>

@@ -10,6 +10,7 @@
   <artifactId>amoeba-spring-boot-service</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-service-admin</module>
     <module>spring-boot-service-dependencies</module>
     <module>spring-boot-service-parent</module>
     <module>spring-boot-service-rbac</module>

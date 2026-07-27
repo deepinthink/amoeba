@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-autoconfigure" />
         <module name="benchmark-server" />
+        <module name="spring-boot-service-starter-admin-server" />
         <module name="spring-boot-component-starter-job-client" />
         <module name="spring-boot-benchmark-starter-server" />
         <module name="spring-boot-component-starter-job-server" />
@@ -15,6 +16,7 @@
         <module name="spring-boot-vaadin" />
         <module name="spring-boot-service-starter-rbac-client" />
         <module name="spring-boot-starter-vaadin" />
+        <module name="spring-boot-service-starter-admin-client" />
         <module name="spring-boot" />
         <module name="spring-boot-component-starter-config-server" />
         <module name="spring-boot-starter-vaadin-admin" />
