@@ -50,6 +50,9 @@ jobs:
       - name: Build && Install amoeba-spring-boot-pipeline
         run: cd infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
 
+      - name: Build && Install amoeba-spring-boot-rbac
+        run: cd services/rbac/java/amoeba-spring-boot-rbac && ./mvnw install -B
+
       - name: Build && Install amoeba-spring-boot-service
         run: cd infrastructure/service/java/amoeba-spring-boot-service && ./mvnw install -B
 

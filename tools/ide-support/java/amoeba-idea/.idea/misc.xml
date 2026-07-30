@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../components/config/java/amoeba-spring-boot-config/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../components/job/java/amoeba-spring-boot-job/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../services/rbac/java/amoeba-spring-boot-rbac/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

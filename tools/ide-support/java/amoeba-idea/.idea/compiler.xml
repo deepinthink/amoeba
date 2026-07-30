@@ -10,21 +10,26 @@
         <module name="benchmark-server" />
         <module name="spring-boot-service-starter-admin-server" />
         <module name="spring-boot-benchmark-starter-server" />
+        <module name="spring-boot-starter-rbac-server" />
+        <module name="spring-boot-starter-rbac-client" />
         <module name="spring-boot-starter-job-server" />
         <module name="spring-boot-starter-config-client" />
         <module name="spring-boot-starter" />
         <module name="spring-boot-vaadin" />
-        <module name="spring-boot-service-starter-rbac-client" />
         <module name="spring-boot-starter-vaadin" />
         <module name="spring-boot-starter-config-server" />
         <module name="spring-boot-service-starter-admin-client" />
         <module name="spring-boot-job-starter-job-client" />
         <module name="spring-boot" />
         <module name="spring-boot-starter-vaadin-admin" />
-        <module name="spring-boot-service-starter-rbac-server" />
         <module name="devops-rbac-server" />
         <module name="spring-boot-vaadin-admin" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-service-rbac" target="25" />
+      <module name="spring-boot-service-starter-rbac-client" target="25" />
+      <module name="spring-boot-service-starter-rbac-server" target="25" />
+    </bytecodeTargetLevel>
   </component>
 </project>
