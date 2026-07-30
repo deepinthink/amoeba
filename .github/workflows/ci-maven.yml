@@ -38,6 +38,9 @@ jobs:
       - name: Build && Install amoeba-specification-service
         run: cd specification/service/java/amoeba-specification-service && ./mvnw install -B
 
+      - name: Build && Install amoeba-spring-boot-config
+        run: cd components/config/java/amoeba-spring-boot-config && ./mvnw install -B
+
       - name: Build && Install amoeba-spring-boot-component
         run: cd infrastructure/component/java/amoeba-spring-boot-component && ./mvnw install -B
 
