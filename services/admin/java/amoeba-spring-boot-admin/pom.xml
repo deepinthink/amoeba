@@ -3,17 +3,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>spring-boot-service-parent</artifactId>
+    <artifactId>spring-boot-admin-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>spring-boot-service-parent/pom.xml</relativePath>
+    <relativePath>spring-boot-admin-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>amoeba-spring-boot-service</artifactId>
+  <artifactId>amoeba-spring-boot-admin</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-service-admin</module>
-    <module>spring-boot-service-dependencies</module>
-    <module>spring-boot-service-parent</module>
-    <module>spring-boot-service-starters</module>
+    <module>spring-boot-admin-dependencies</module>
+    <module>spring-boot-admin-parent</module>
+    <module>spring-boot-admin-starters</module>
   </modules>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>

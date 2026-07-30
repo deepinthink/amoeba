@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/amoeba-idea.iml" filepath="$PROJECT_DIR$/amoeba-idea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/spring-boot-service-rbac/spring-boot-service-rbac.iml" filepath="$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/spring-boot-service-rbac/spring-boot-service-rbac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/spring-boot-service-starters/spring-boot-service-starter-rbac-client/spring-boot-service-starter-rbac-client.iml" filepath="$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/spring-boot-service-starters/spring-boot-service-starter-rbac-client/spring-boot-service-starter-rbac-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/spring-boot-service-starters/spring-boot-service-starter-rbac-server/spring-boot-service-starter-rbac-server.iml" filepath="$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/spring-boot-service-starters/spring-boot-service-starter-rbac-server/spring-boot-service-starter-rbac-server.iml" />
     </modules>
   </component>
 </project>
