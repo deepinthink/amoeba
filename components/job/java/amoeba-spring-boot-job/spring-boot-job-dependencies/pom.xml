@@ -7,18 +7,18 @@
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath/>
   </parent>
-  <artifactId>spring-boot-component-dependencies</artifactId>
+  <artifactId>spring-boot-job-dependencies</artifactId>
   <packaging>pom</packaging>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-component-starter-job-client</artifactId>
+        <artifactId>spring-boot-starter-job-client</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-component-starter-job-server</artifactId>
+        <artifactId>spring-boot-starter-job-server</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
