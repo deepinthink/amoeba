@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/../../../../templates/benchmark/java/amoeba-benchmark/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../specification/service/java/amoeba-specification-service/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../infrastructure/service/java/amoeba-spring-boot-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../components/config/java/amoeba-spring-boot-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

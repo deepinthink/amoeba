@@ -3,17 +3,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>spring-boot-component-parent</artifactId>
+    <artifactId>spring-boot-config-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>spring-boot-component-parent/pom.xml</relativePath>
+    <relativePath>spring-boot-config-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>amoeba-spring-boot-component</artifactId>
+  <artifactId>amoeba-spring-boot-config</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-component-dependencies</module>
-    <module>spring-boot-component-job</module>
-    <module>spring-boot-component-parent</module>
-    <module>spring-boot-component-starters</module>
+    <module>spring-boot-config-dependencies</module>
+    <module>spring-boot-config-parent</module>
+    <module>spring-boot-config-starters</module>
   </modules>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
