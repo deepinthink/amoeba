@@ -12,7 +12,5 @@
   <modules>
     <module>spring-boot-service-starter-admin-client</module>
     <module>spring-boot-service-starter-admin-server</module>
-    <module>spring-boot-service-starter-rbac-client</module>
-    <module>spring-boot-service-starter-rbac-server</module>
   </modules>
 </project>
