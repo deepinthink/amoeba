@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-admin-admin-vaadin" />
+        <module name="spring-boot-starter-admin-admin-vaadin" />
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-starter-admin-server" />
         <module name="benchmark-server" />
