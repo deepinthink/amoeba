@@ -16,12 +16,14 @@
         <module name="spring-boot-starter-admin-client" />
         <module name="spring-boot-starter-rbac-client" />
         <module name="spring-boot-starter-job-server" />
+        <module name="spring-boot-starter-pipeline-admin-vaadin" />
         <module name="spring-boot-starter" />
         <module name="spring-boot-vaadin" />
         <module name="spring-boot-starter-config-admin-vaadin" />
         <module name="spring-boot-starter-vaadin-admin" />
         <module name="spring-boot-config-admin-vaadin" />
         <module name="spring-boot-autoconfigure" />
+        <module name="spring-boot-pipeline-admin-vaadin" />
         <module name="spring-boot-benchmark-starter-server" />
         <module name="spring-boot-starter-job-admin-vaadin" />
         <module name="spring-boot-starter-rbac-server" />
