@@ -10,6 +10,7 @@
   <artifactId>amoeba-spring-boot-admin</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-admin-admin</module>
     <module>spring-boot-admin-dependencies</module>
     <module>spring-boot-admin-parent</module>
     <module>spring-boot-admin-starters</module>
