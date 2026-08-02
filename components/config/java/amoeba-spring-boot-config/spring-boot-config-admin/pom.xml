@@ -7,11 +7,9 @@
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath>../spring-boot-config-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>spring-boot-config-starters</artifactId>
+  <artifactId>spring-boot-config-admin</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-starter-config-admin-vaadin</module>
-    <module>spring-boot-starter-config-client</module>
-    <module>spring-boot-starter-config-server</module>
+    <module>spring-boot-config-admin-vaadin</module>
   </modules>
 </project>
