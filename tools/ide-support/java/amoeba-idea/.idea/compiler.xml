@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-admin-admin-vaadin" />
         <module name="spring-boot-starter-admin-admin-vaadin" />
+        <module name="spring-boot-config-admin-vaadin" />
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-starter-admin-server" />
         <module name="benchmark-server" />
@@ -23,6 +24,7 @@
         <module name="spring-boot-vaadin" />
         <module name="spring-boot-starter-vaadin" />
         <module name="spring-boot-starter-config-server" />
+        <module name="spring-boot-starter-config-admin-vaadin" />
         <module name="spring-boot-job-starter-job-client" />
         <module name="spring-boot" />
         <module name="spring-boot-starter-vaadin-admin" />

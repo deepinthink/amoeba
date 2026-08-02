@@ -13,6 +13,16 @@
     <dependencies>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-config-admin-vaadin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-starter-config-admin-vaadin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>spring-boot-starter-config-client</artifactId>
         <version>${project.version}</version>
       </dependency>
