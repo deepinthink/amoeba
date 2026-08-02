@@ -9,4 +9,7 @@
   </parent>
   <artifactId>spring-boot-pipeline-starters</artifactId>
   <packaging>pom</packaging>
+  <modules>
+    <module>spring-boot-starter-pipeline-admin-vaadin</module>
+  </modules>
 </project>
