@@ -10,6 +10,7 @@
   <artifactId>spring-boot-rbac-starters</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-starter-rbac-admin-vaadin</module>
     <module>spring-boot-starter-rbac-client</module>
     <module>spring-boot-starter-rbac-server</module>
   </modules>

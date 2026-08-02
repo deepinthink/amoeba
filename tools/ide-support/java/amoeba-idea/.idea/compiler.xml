@@ -10,8 +10,10 @@
         <module name="spring-boot-starter-admin-server" />
         <module name="benchmark-server" />
         <module name="spring-boot-benchmark-starter-server" />
+        <module name="spring-boot-rbac-admin-vaadin" />
         <module name="spring-boot-starter-rbac-server" />
         <module name="spring-boot-starter-admin-client" />
+        <module name="spring-boot-starter-rbac-admin-vaadin" />
         <module name="spring-boot-starter-rbac-client" />
         <module name="spring-boot-starter-job-server" />
         <module name="spring-boot-starter-config-client" />
