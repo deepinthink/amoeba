@@ -7,14 +7,18 @@
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
-  <artifactId>spring-boot-starter-job-client</artifactId>
+  <artifactId>spring-boot-starter-job-admin-vaadin</artifactId>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-starter</artifactId>
+      <artifactId>spring-boot-starter-vaadin-admin</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.deepinthink.amoeba</groupId>
+      <artifactId>spring-boot-job-admin-vaadin</artifactId>
     </dependency>
   </dependencies>
 </project>
