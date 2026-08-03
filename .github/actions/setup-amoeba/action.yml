@@ -1,0 +1,55 @@
+name: Setup Amoeba
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout deepinthink/amoeba
+      uses: actions/checkout@v4
+      with:
+        repository: deepinthink/amoeba
+        path: deepinthink/amoeba
+
+    - name: Build && Install amoeba-maven
+      run: cd deepinthink/amoeba/tools/buildtools/java/amoeba-maven && ./mvnw install -B
+
+    - name: Build && Install amoeba-external
+      run: cd deepinthink/amoeba/infrastructure/external/java/amoeba-external && ./mvnw install -B
+
+    - name: Build && Install amoeba-spring-boot
+      run: cd deepinthink/amoeba/infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
+
+    - name: Build && Install amoeba-specification-benchmark
+      run: cd deepinthink/amoeba/specification/benchmark/java/amoeba-specification-benchmark && ./mvnw install -B
+
+    - name: Build && Install amoeba-specification-component
+      run: cd deepinthink/amoeba/specification/component/java/amoeba-specification-component && ./mvnw install -B
+
+    - name: Build && Install amoeba-specification-pipeline
+      run: cd deepinthink/amoeba/specification/pipeline/java/amoeba-specification-pipeline && ./mvnw install -B
+
+    - name: Build && Install amoeba-specification-service
+      run: cd deepinthink/amoeba/specification/service/java/amoeba-specification-service && ./mvnw install -B
+
+    - name: Build && Install amoeba-spring-boot-admin
+      run: cd deepinthink/amoeba/services/admin/java/amoeba-spring-boot-admin && ./mvnw install -B
+
+    - name: Build && Install amoeba-spring-boot-config
+      run: cd deepinthink/amoeba/components/config/java/amoeba-spring-boot-config && ./mvnw install -B
+
+    - name: Build && Install amoeba-spring-boot-job
+      run: cd deepinthink/amoeba/components/job/java/amoeba-spring-boot-job && ./mvnw install -B
+
+    - name: Build && Install amoeba-spring-boot-pipeline
+      run: cd deepinthink/amoeba/infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
+
+    - name: Build && Install amoeba-spring-boot-rbac
+      run: cd deepinthink/amoeba/services/rbac/java/amoeba-spring-boot-rbac && ./mvnw install -B
+
+    - name: Build && Install amoeba-benchmark
+      run: cd deepinthink/amoeba/templates/benchmark/java/amoeba-benchmark && ./mvnw install -B
+
+    - name: Build && Install amoeba-devops
+      run: cd deepinthink/amoeba/templates/devops/java/amoeba-devops && ./mvnw install -B
+
+    - name: Build && Install amoeba-initializr
+      run: cd deepinthink/amoeba/tools/initializr/java/amoeba-initializr && ./mvnw install -B
