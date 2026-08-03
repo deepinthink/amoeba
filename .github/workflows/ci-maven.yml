@@ -17,50 +17,5 @@ jobs:
           java-version: '25'
           cache: 'maven'
 
-      - name: Build && Install amoeba-maven
-        run: cd tools/buildtools/java/amoeba-maven && ./mvnw install -B
+      - uses: ./.github/actions/setup-amoeba
 
-      - name: Build && Install amoeba-external
-        run: cd infrastructure/external/java/amoeba-external && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot
-        run: cd infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
-
-      - name: Build && Install amoeba-specification-benchmark
-        run: cd specification/benchmark/java/amoeba-specification-benchmark && ./mvnw install -B
-
-      - name: Build && Install amoeba-specification-component
-        run: cd specification/component/java/amoeba-specification-component && ./mvnw install -B
-
-      - name: Build && Install amoeba-specification-pipeline
-        run: cd specification/pipeline/java/amoeba-specification-pipeline && ./mvnw install -B
-
-      - name: Build && Install amoeba-specification-service
-        run: cd specification/service/java/amoeba-specification-service && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-config
-        run: cd components/config/java/amoeba-spring-boot-config && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-job
-        run: cd components/job/java/amoeba-spring-boot-job && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-benchmark
-        run: cd infrastructure/benchmark/java/amoeba-spring-boot-benchmark && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-pipeline
-        run: cd infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-admin
-        run: cd services/admin/java/amoeba-spring-boot-admin && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot-rbac
-        run: cd services/rbac/java/amoeba-spring-boot-rbac && ./mvnw install -B
-
-      - name: Build && Install amoeba-benchmark
-        run: cd templates/benchmark/java/amoeba-benchmark && ./mvnw install -B
-
-      - name: Build && Install amoeba-devops
-        run: cd templates/devops/java/amoeba-devops && ./mvnw install -B
-
-      - name: Build && Install amoeba-initializr
-        run: cd tools/initializr/java/amoeba-initializr && ./mvnw install -B
