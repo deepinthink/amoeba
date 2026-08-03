@@ -38,6 +38,13 @@
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-benchmark-dependencies</artifactId>
+        <version>${amoeba.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>benchmark-dependencies</artifactId>
         <version>${amoeba.version}</version>
         <type>pom</type>
