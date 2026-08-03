@@ -17,5 +17,5 @@ jobs:
           java-version: '25'
           cache: 'maven'
 
-      - uses: ./.github/actions/setup-amoeba
+      - uses: ./.github/actions/setup-amoeba/java
 

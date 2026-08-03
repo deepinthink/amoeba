@@ -49,6 +49,10 @@ runs:
       shell: bash
       run: cd deepinthink/amoeba/components/job/java/amoeba-spring-boot-job && ./mvnw install -B
 
+    - name: Build && Install amoeba-spring-boot-benchmark
+      shell: bash
+      run: cd deepinthink/amoeba/infrastructure/benchmark/java/amoeba-spring-boot-benchmark && ./mvnw install -B
+
     - name: Build && Install amoeba-spring-boot-pipeline
       shell: bash
       run: cd deepinthink/amoeba/infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
