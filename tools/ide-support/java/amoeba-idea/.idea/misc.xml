@@ -15,10 +15,11 @@
         <option value="$PROJECT_DIR$/../../../../templates/devops/java/amoeba-devops/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../templates/benchmark/java/amoeba-benchmark/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../specification/service/java/amoeba-specification-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../../components/config/java/amoeba-spring-boot-config/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../../components/job/java/amoeba-spring-boot-job/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../services/rbac/java/amoeba-spring-boot-rbac/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../services/admin/java/amoeba-spring-boot-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../components/config/java/amoeba-spring-boot-component-config/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../components/job/java/amobe-spring-boot-component-job/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../components/job/java/amoeba-spring-boot-component-job/pom.xml" />
       </list>
     </option>
   </component>
