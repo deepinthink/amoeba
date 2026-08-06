@@ -44,9 +44,9 @@ runs:
       shell: bash
       run: cd deepinthink/amoeba/specification/service/java/amoeba-specification-service && ./mvnw install -B
 
-    - name: Build && Install amoeba-spring-boot-admin
+    - name: Build && Install amoeba-spring-boot-service-admin
       shell: bash
-      run: cd deepinthink/amoeba/services/admin/java/amoeba-spring-boot-admin && ./mvnw install -B
+      run: cd deepinthink/amoeba/services/admin/java/amoeba-spring-boot-service-admin && ./mvnw install -B
 
     - name: Build && Install amoeba-spring-boot-component-config
       shell: bash
