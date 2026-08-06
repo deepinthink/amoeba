@@ -64,9 +64,9 @@ runs:
       shell: bash
       run: cd deepinthink/amoeba/infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
 
-    - name: Build && Install amoeba-spring-boot-rbac
+    - name: Build && Install amoeba-spring-boot-service-rbac
       shell: bash
-      run: cd deepinthink/amoeba/services/rbac/java/amoeba-spring-boot-rbac && ./mvnw install -B
+      run: cd deepinthink/amoeba/services/rbac/java/amoeba-spring-boot-service-rbac && ./mvnw install -B
 
     - name: Build && Install amoeba-benchmark
       shell: bash
