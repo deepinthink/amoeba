@@ -38,8 +38,8 @@ jobs:
       - name: Build && Install amoeba-specification-service
         run: cd specification/service/java/amoeba-specification-service && ./mvnw install -B
 
-      - name: Build && Install amoeba-spring-boot-admin
-        run: cd services/admin/java/amoeba-spring-boot-admin && ./mvnw install -B
+      - name: Build && Install amoeba-spring-boot-service-admin
+        run: cd services/admin/java/amoeba-spring-boot-service-admin && ./mvnw install -B
 
       - name: Build && Install amoeba-spring-boot-component-config
         run: cd components/config/java/amoeba-spring-boot-component-config && ./mvnw install -B
@@ -53,8 +53,8 @@ jobs:
       - name: Build && Install amoeba-spring-boot-pipeline
         run: cd infrastructure/pipeline/java/amoeba-spring-boot-pipeline && ./mvnw install -B
 
-      - name: Build && Install amoeba-spring-boot-rbac
-        run: cd services/rbac/java/amoeba-spring-boot-rbac && ./mvnw install -B
+      - name: Build && Install amoeba-spring-boot-service-rbac
+        run: cd services/rbac/java/amoeba-spring-boot-service-rbac && ./mvnw install -B
 
       - name: Build && Install amoeba-benchmark
         run: cd templates/benchmark/java/amoeba-benchmark && ./mvnw install -B
