@@ -1,5 +1,11 @@
 name: Setup Amoeba
 
+inputs:
+  ref:
+    description: 'The ref to checkout'
+    required: false
+    default: 'main'
+
 runs:
   using: "composite"
   steps:
@@ -8,6 +14,7 @@ runs:
       with:
         repository: deepinthink/amoeba
         path: deepinthink/amoeba
+        ref: ${{ inputs.ref }}
 
     - name: Build && Install amoeba-maven
       shell: bash
@@ -41,13 +48,13 @@ runs:
       shell: bash
       run: cd deepinthink/amoeba/services/admin/java/amoeba-spring-boot-admin && ./mvnw install -B
 
-    - name: Build && Install amoeba-spring-boot-config
+    - name: Build && Install amoeba-spring-boot-component-config
       shell: bash
-      run: cd deepinthink/amoeba/components/config/java/amoeba-spring-boot-config && ./mvnw install -B
+      run: cd deepinthink/amoeba/components/config/java/amoeba-spring-boot-component-config && ./mvnw install -B
 
-    - name: Build && Install amoeba-spring-boot-job
+    - name: Build && Install amoeba-spring-boot-component-job
       shell: bash
-      run: cd deepinthink/amoeba/components/job/java/amoeba-spring-boot-job && ./mvnw install -B
+      run: cd deepinthink/amoeba/components/job/java/amoeba-spring-boot-component-job && ./mvnw install -B
 
     - name: Build && Install amoeba-spring-boot-benchmark
       shell: bash
