@@ -10,8 +10,8 @@
   <artifactId>amoeba-spring-boot-component-job</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-component-job-admin</module>
     <module>spring-boot-component-job-dependencies</module>
+    <module>spring-boot-component-job-modules</module>
     <module>spring-boot-component-job-parent</module>
     <module>spring-boot-component-job-starters</module>
   </modules>

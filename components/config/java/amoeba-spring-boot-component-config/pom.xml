@@ -10,8 +10,8 @@
   <artifactId>amoeba-spring-boot-component-config</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-component-config-admin</module>
     <module>spring-boot-component-config-dependencies</module>
+    <module>spring-boot-component-config-modules</module>
     <module>spring-boot-component-config-parent</module>
     <module>spring-boot-component-config-starters</module>
   </modules>

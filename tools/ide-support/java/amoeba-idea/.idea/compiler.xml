@@ -47,6 +47,10 @@
       <module name="spring-boot-admin-dependencies" target="25" />
       <module name="spring-boot-admin-parent" target="25" />
       <module name="spring-boot-admin-starters" target="25" />
+      <module name="spring-boot-benchmark-client" target="25" />
+      <module name="spring-boot-benchmark-server" target="25" />
+      <module name="spring-boot-component-config-admin" target="25" />
+      <module name="spring-boot-component-job-admin" target="25" />
       <module name="spring-boot-config-admin" target="25" />
       <module name="spring-boot-config-admin-vaadin" target="25" />
       <module name="spring-boot-config-dependencies" target="25" />
@@ -58,15 +62,18 @@
       <module name="spring-boot-job-parent" target="25" />
       <module name="spring-boot-job-starter-job-client" target="25" />
       <module name="spring-boot-job-starters" target="25" />
+      <module name="spring-boot-pipeline-admin" target="25" />
       <module name="spring-boot-rbac-admin" target="25" />
       <module name="spring-boot-rbac-admin-vaadin" target="25" />
       <module name="spring-boot-rbac-dependencies" target="25" />
       <module name="spring-boot-rbac-parent" target="25" />
       <module name="spring-boot-rbac-starters" target="25" />
       <module name="spring-boot-service-admin" target="25" />
+      <module name="spring-boot-service-admin-admin" target="25" />
       <module name="spring-boot-service-dependencies" target="25" />
       <module name="spring-boot-service-parent" target="25" />
       <module name="spring-boot-service-rbac" target="25" />
+      <module name="spring-boot-service-rbac-admin" target="25" />
       <module name="spring-boot-service-starter-admin-client" target="25" />
       <module name="spring-boot-service-starter-admin-server" target="25" />
       <module name="spring-boot-service-starter-rbac-client" target="25" />

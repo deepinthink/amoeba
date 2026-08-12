@@ -10,8 +10,8 @@
   <artifactId>amoeba-spring-boot-service-admin</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-service-admin-admin</module>
     <module>spring-boot-service-admin-dependencies</module>
+    <module>spring-boot-service-admin-modules</module>
     <module>spring-boot-service-admin-parent</module>
     <module>spring-boot-service-admin-starters</module>
   </modules>
