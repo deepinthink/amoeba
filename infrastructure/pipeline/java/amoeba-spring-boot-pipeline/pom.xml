@@ -10,8 +10,8 @@
   <artifactId>amoeba-spring-boot-pipeline</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-pipeline-admin</module>
     <module>spring-boot-pipeline-dependencies</module>
+    <module>spring-boot-pipeline-modules</module>
     <module>spring-boot-pipeline-parent</module>
     <module>spring-boot-pipeline-starters</module>
   </modules>

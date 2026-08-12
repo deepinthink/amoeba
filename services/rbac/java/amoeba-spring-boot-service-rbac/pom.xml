@@ -10,8 +10,8 @@
   <artifactId>amoeba-spring-boot-service-rbac</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-service-rbac-admin</module>
     <module>spring-boot-service-rbac-dependencies</module>
+    <module>spring-boot-service-rbac-modules</module>
     <module>spring-boot-service-rbac-parent</module>
     <module>spring-boot-service-rbac-starters</module>
   </modules>

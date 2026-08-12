@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>spring-boot-component-config-admin</artifactId>
+    <artifactId>spring-boot-component-job-modules</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
-  <artifactId>spring-boot-component-config-admin-vaadin</artifactId>
+  <artifactId>spring-boot-component-job-admin-vaadin</artifactId>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
