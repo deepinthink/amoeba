@@ -10,6 +10,9 @@
   <artifactId>spring-boot-component-config-modules</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-component-config-admin-server</module>
     <module>spring-boot-component-config-admin-vaadin</module>
+    <module>spring-boot-component-config-client</module>
+    <module>spring-boot-component-config-server</module>
   </modules>
 </project>

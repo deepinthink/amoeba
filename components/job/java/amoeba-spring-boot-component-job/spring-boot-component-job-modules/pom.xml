@@ -10,6 +10,9 @@
   <artifactId>spring-boot-component-job-modules</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-component-job-admin-server</module>
     <module>spring-boot-component-job-admin-vaadin</module>
+    <module>spring-boot-component-job-client</module>
+    <module>spring-boot-component-job-server</module>
   </modules>
 </project>

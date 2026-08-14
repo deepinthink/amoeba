@@ -6,34 +6,54 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-service-rbac-client" />
+        <module name="spring-boot-service-admin-server" />
         <module name="benchmark-server" />
         <module name="spring-boot-starter-component-config-admin-vaadin" />
         <module name="spring-boot-service-admin-admin-vaadin" />
+        <module name="spring-boot-service-rbac-server" />
         <module name="spring-boot-starter-component-job-admin-vaadin" />
         <module name="spring-boot-starter-service-admin-admin-vaadin" />
+        <module name="spring-boot-starter-service-rbac-admin-server" />
         <module name="spring-boot-starter-service-rbac-client" />
+        <module name="spring-boot-component-job-client" />
         <module name="spring-boot-starter-pipeline-admin-vaadin" />
         <module name="spring-boot-starter" />
         <module name="spring-boot-starter-component-job-server" />
         <module name="spring-boot-vaadin" />
         <module name="spring-boot-starter-service-admin-client" />
+        <module name="spring-boot-pipeline-admin-server" />
         <module name="spring-boot-starter-service-rbac-admin-vaadin" />
+        <module name="spring-boot-component-config-server" />
+        <module name="spring-boot-starter-component-config-admin-server" />
         <module name="spring-boot-starter-vaadin-admin" />
+        <module name="spring-boot-component-config-client" />
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-pipeline-admin-vaadin" />
         <module name="spring-boot-component-config-admin-vaadin" />
+        <module name="spring-boot-service-rbac-admin-server" />
+        <module name="spring-boot-starter-pipeline-admin-server" />
         <module name="spring-boot-starter-component-config-server" />
         <module name="spring-boot-benchmark-starter-server" />
+        <module name="spring-boot-starter-pipeline-server" />
         <module name="spring-boot-starter-service-admin-server" />
         <module name="spring-boot-component-job-admin-vaadin" />
         <module name="spring-boot-starter-component-config-client" />
         <module name="spring-boot-starter-vaadin" />
         <module name="spring-boot-service-rbac-admin-vaadin" />
         <module name="spring-boot-starter-service-rbac-server" />
+        <module name="spring-boot-component-config-admin-server" />
+        <module name="spring-boot-starter-component-job-admin-server" />
+        <module name="spring-boot-pipeline-server" />
         <module name="spring-boot" />
+        <module name="spring-boot-service-admin-client" />
         <module name="spring-boot-starter-component-job-client" />
+        <module name="spring-boot-component-job-server" />
+        <module name="spring-boot-component-job-admin-server" />
         <module name="devops-rbac-server" />
         <module name="spring-boot-vaadin-admin" />
+        <module name="spring-boot-service-admin-admin-server" />
+        <module name="spring-boot-starter-service-admin-admin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -88,6 +108,8 @@
       <module name="spring-boot-starter-job-admin-vaadin" target="25" />
       <module name="spring-boot-starter-job-client" target="25" />
       <module name="spring-boot-starter-job-server" target="25" />
+      <module name="spring-boot-starter-pipeline-admin-vaadin (1)" target="25" />
+      <module name="spring-boot-starter-pipeline-admin-vaadin (2)" target="25" />
       <module name="spring-boot-starter-rbac-admin-vaadin" target="25" />
       <module name="spring-boot-starter-rbac-client" target="25" />
       <module name="spring-boot-starter-rbac-server" target="25" />

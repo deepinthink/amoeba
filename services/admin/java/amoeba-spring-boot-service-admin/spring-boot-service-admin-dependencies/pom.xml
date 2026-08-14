@@ -13,7 +13,27 @@
     <dependencies>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-service-admin-admin-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>spring-boot-service-admin-admin-vaadin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-service-admin-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-service-admin-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-starter-service-admin-admin-vaadin</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>

@@ -13,12 +13,32 @@
     <dependencies>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-pipeline-admin-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>spring-boot-pipeline-admin-vaadin</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-pipeline-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-starter-pipeline-admin-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>spring-boot-starter-pipeline-admin-vaadin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-starter-pipeline-server</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
