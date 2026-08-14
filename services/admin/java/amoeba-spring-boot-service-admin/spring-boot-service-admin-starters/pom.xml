@@ -10,6 +10,7 @@
   <artifactId>spring-boot-service-admin-starters</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-starter-service-admin-admin-server</module>
     <module>spring-boot-starter-service-admin-admin-vaadin</module>
     <module>spring-boot-starter-service-admin-client</module>
     <module>spring-boot-starter-service-admin-server</module>
