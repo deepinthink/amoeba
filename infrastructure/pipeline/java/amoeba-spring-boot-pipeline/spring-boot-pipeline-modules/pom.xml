@@ -10,8 +10,8 @@
   <artifactId>spring-boot-pipeline-modules</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-boot-pipeline-admin-server</module>
-    <module>spring-boot-pipeline-admin-vaadin</module>
-    <module>spring-boot-pipeline-server</module>
+    <module>spring-boot-pipeline-admin-server-core</module>
+    <module>spring-boot-pipeline-admin-vaadin-core</module>
+    <module>spring-boot-pipeline-server-core</module>
   </modules>
 </project>

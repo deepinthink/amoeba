@@ -16,5 +16,9 @@
       <groupId>org.deepinthink.amoeba</groupId>
       <artifactId>spring-boot-starter</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.deepinthink.amoeba</groupId>
+      <artifactId>spring-boot-service-admin-admin-server-core</artifactId>
+    </dependency>
   </dependencies>
 </project>

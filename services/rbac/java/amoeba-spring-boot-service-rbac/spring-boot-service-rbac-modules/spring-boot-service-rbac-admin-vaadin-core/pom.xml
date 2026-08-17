@@ -3,22 +3,38 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>spring-boot-component-config-starters</artifactId>
+    <artifactId>spring-boot-service-rbac-modules</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
-  <artifactId>spring-boot-starter-component-config-client</artifactId>
+  <artifactId>spring-boot-service-rbac-admin-vaadin-core</artifactId>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-starter</artifactId>
+      <artifactId>spring-boot-vaadin-admin</artifactId>
     </dependency>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-component-config-client-core</artifactId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-spring</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-security</artifactId>
+      <optional>true</optional>
     </dependency>
   </dependencies>
 </project>
