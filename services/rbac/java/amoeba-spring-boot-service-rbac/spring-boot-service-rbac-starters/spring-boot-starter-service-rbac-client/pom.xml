@@ -18,7 +18,7 @@
     </dependency>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-service-rbac-client</artifactId>
+      <artifactId>spring-boot-service-rbac-client-core</artifactId>
     </dependency>
   </dependencies>
 </project>

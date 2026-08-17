@@ -18,7 +18,7 @@
     </dependency>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-component-job-server</artifactId>
+      <artifactId>spring-boot-component-job-server-core</artifactId>
     </dependency>
   </dependencies>
 </project>

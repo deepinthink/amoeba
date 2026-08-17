@@ -13,22 +13,22 @@
     <dependencies>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-service-rbac-admin-server</artifactId>
+        <artifactId>spring-boot-service-rbac-admin-server-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-service-rbac-admin-vaadin</artifactId>
+        <artifactId>spring-boot-service-rbac-admin-vaadin-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-service-rbac-client</artifactId>
+        <artifactId>spring-boot-service-rbac-client-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-service-rbac-server</artifactId>
+        <artifactId>spring-boot-service-rbac-server-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
