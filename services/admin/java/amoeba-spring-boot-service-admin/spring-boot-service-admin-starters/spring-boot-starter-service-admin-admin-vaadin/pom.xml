@@ -18,7 +18,7 @@
     </dependency>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-service-admin-admin-vaadin-core</artifactId>
+      <artifactId>spring-boot-service-admin-admin-vaadin</artifactId>
     </dependency>
   </dependencies>
 </project>
