@@ -13,22 +13,22 @@
     <dependencies>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-component-config-admin-server-core</artifactId>
+        <artifactId>spring-boot-component-config-admin-server</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-component-config-admin-vaadin-core</artifactId>
+        <artifactId>spring-boot-component-config-admin-vaadin</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-component-config-client-core</artifactId>
+        <artifactId>spring-boot-component-config-client</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-component-config-server-core</artifactId>
+        <artifactId>spring-boot-component-config-server</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>

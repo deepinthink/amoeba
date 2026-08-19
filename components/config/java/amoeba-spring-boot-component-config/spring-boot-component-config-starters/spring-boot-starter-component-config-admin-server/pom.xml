@@ -18,7 +18,7 @@
     </dependency>
     <dependency>
       <groupId>org.deepinthink.amoeba</groupId>
-      <artifactId>spring-boot-component-config-admin-server-core</artifactId>
+      <artifactId>spring-boot-component-config-admin-server</artifactId>
     </dependency>
   </dependencies>
 </project>
