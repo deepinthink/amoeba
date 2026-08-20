@@ -48,7 +48,7 @@
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
+        <artifactId>spring-boot-starter-webmvc</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

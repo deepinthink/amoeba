@@ -50,7 +50,7 @@
         <module name="spring-boot-service-rbac-admin-server" />
         <module name="spring-boot-benchmark-starter-server" />
         <module name="spring-boot-component-job-admin-vaadin" />
-        <module name="spring-boot-starter-web" />
+        <module name="spring-boot-starter-webmvc" />
         <module name="spring-boot-service-admin-client" />
         <module name="spring-boot-starter-component-job-client" />
         <module name="spring-boot-component-job-server" />
