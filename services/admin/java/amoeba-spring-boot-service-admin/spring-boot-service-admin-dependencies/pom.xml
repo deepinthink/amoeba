@@ -33,7 +33,7 @@
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-starter-service-admin-admin-vaadin</artifactId>
+        <artifactId>spring-boot-starter-service-admin-admin-server</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
