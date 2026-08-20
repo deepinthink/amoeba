@@ -13,5 +13,6 @@
     <module>spring-boot-starter</module>
     <module>spring-boot-starter-vaadin</module>
     <module>spring-boot-starter-vaadin-admin</module>
+    <module>spring-boot-starter-web</module>
   </modules>
 </project>
