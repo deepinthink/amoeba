@@ -21,6 +21,7 @@
         <module name="spring-boot-starter-component-config-server" />
         <module name="spring-boot-starter-pipeline-server" />
         <module name="spring-boot-starter-service-admin-server" />
+        <module name="spring-boot-starter-socket" />
         <module name="spring-boot-starter-component-config-client" />
         <module name="spring-boot-starter-vaadin" />
         <module name="spring-boot-service-rbac-admin-vaadin" />
@@ -38,6 +39,7 @@
         <module name="benchmark-server" />
         <module name="spring-boot-starter-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-server" />
+        <module name="spring-boot-socket" />
         <module name="spring-boot-starter-service-rbac-admin-server" />
         <module name="spring-boot-component-job-client" />
         <module name="spring-boot-starter-pipeline-admin-vaadin" />
@@ -46,6 +48,7 @@
         <module name="spring-boot-starter-service-admin-client" />
         <module name="spring-boot-starter-service-rbac-admin-vaadin" />
         <module name="spring-boot-starter-component-config-admin-server" />
+        <module name="external-socket" />
         <module name="spring-boot-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-admin-server" />
         <module name="spring-boot-benchmark-starter-server" />

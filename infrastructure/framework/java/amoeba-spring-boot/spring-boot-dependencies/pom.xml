@@ -23,12 +23,22 @@
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-socket</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>spring-boot-vaadin</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.deepinthink.amoeba</groupId>
         <artifactId>spring-boot-vaadin-admin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-starter-socket</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
