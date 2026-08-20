@@ -46,6 +46,11 @@
         <artifactId>spring-boot-starter-vaadin-admin</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.deepinthink.amoeba</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
