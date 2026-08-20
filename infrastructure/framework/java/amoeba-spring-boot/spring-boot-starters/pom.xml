@@ -10,6 +10,7 @@
   <artifactId>spring-boot-starters</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-starter-socket</module>
     <module>spring-boot-starter</module>
     <module>spring-boot-starter-vaadin</module>
     <module>spring-boot-starter-vaadin-admin</module>
