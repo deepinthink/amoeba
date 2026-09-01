@@ -5,17 +5,10 @@
     <groupId>org.deepinthink.amoeba</groupId>
     <artifactId>external-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>external-parent/pom.xml</relativePath>
+    <relativePath>../external-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>amoeba-external</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-    <module>external-actor</module>
-    <module>external-dependencies</module>
-    <module>external-parent</module>
-    <module>external-socket</module>
-  </modules>
+  <artifactId>external-actor</artifactId>
   <properties>
-    <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
+    <spotless.license-header.file>${project.basedir}/../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
 </project>
