@@ -41,6 +41,9 @@ jobs:
       - name: Build && Install amoeba-spring-boot-service-admin
         run: cd services/admin/java/amoeba-spring-boot-service-admin && ./mvnw install -B
 
+      - name: Build && Install amoeba-spring-boot-component-broker
+        run: cd components/broker/java/amoeba-spring-boot-component-broker && ./mvnw install -B
+
       - name: Build && Install amoeba-spring-boot-component-config
         run: cd components/config/java/amoeba-spring-boot-component-config && ./mvnw install -B
 

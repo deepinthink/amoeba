@@ -10,16 +10,20 @@
         <module name="spring-boot-starter-component-job-admin-vaadin" />
         <module name="spring-boot-starter-service-admin-admin-vaadin" />
         <module name="spring-boot-starter-service-rbac-client" />
+        <module name="spring-boot-component-broker-server" />
         <module name="spring-boot-starter" />
         <module name="spring-boot-pipeline-admin-server" />
         <module name="spring-boot-component-config-server" />
         <module name="spring-boot-starter-vaadin-admin" />
         <module name="spring-boot-component-config-client" />
+        <module name="spring-boot-starter-component-broker-server" />
         <module name="spring-boot-autoconfigure" />
         <module name="spring-boot-pipeline-admin-vaadin" />
         <module name="spring-boot-starter-pipeline-admin-server" />
         <module name="spring-boot-starter-component-config-server" />
+        <module name="spring-boot-starter-component-broker-client" />
         <module name="spring-boot-starter-pipeline-server" />
+        <module name="spring-boot-component-broker-admin-server" />
         <module name="spring-boot-starter-service-admin-server" />
         <module name="spring-boot-starter-socket" />
         <module name="spring-boot-starter-component-config-client" />
@@ -29,6 +33,7 @@
         <module name="spring-boot-starter-component-job-admin-server" />
         <module name="spring-boot-component-config-admin-server" />
         <module name="spring-boot-pipeline-server" />
+        <module name="spring-boot-component-broker-client" />
         <module name="spring-boot" />
         <module name="spring-boot-component-job-admin-server" />
         <module name="devops-rbac-server" />
@@ -40,6 +45,7 @@
         <module name="spring-boot-starter-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-server" />
         <module name="spring-boot-socket" />
+        <module name="spring-boot-starter-component-broker-admin-server" />
         <module name="spring-boot-starter-service-rbac-admin-server" />
         <module name="spring-boot-actor" />
         <module name="spring-boot-component-job-client" />
@@ -49,6 +55,7 @@
         <module name="spring-boot-starter-service-admin-client" />
         <module name="spring-boot-starter-service-rbac-admin-vaadin" />
         <module name="spring-boot-starter-component-config-admin-server" />
+        <module name="spring-boot-starter-component-broker-admin-vaadin" />
         <module name="external-socket" />
         <module name="spring-boot-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-admin-server" />
@@ -57,6 +64,7 @@
         <module name="spring-boot-component-job-admin-vaadin" />
         <module name="spring-boot-starter-webmvc" />
         <module name="spring-boot-service-admin-client" />
+        <module name="spring-boot-component-broker-admin-vaadin" />
         <module name="spring-boot-starter-component-job-client" />
         <module name="spring-boot-component-job-server" />
         <module name="spring-boot-vaadin-admin" />

@@ -48,6 +48,10 @@ runs:
       shell: bash
       run: cd deepinthink/amoeba/services/admin/java/amoeba-spring-boot-service-admin && ./mvnw install -B
 
+    - name: Build && Install amoeba-spring-boot-component-broker
+      shell: bash
+      run: cd deepinthink/amoeba/components/broker/java/amoeba-spring-boot-component-broker && ./mvnw install -B
+
     - name: Build && Install amoeba-spring-boot-component-config
       shell: bash
       run: cd deepinthink/amoeba/components/config/java/amoeba-spring-boot-component-config && ./mvnw install -B
