@@ -9,4 +9,10 @@
   </parent>
   <artifactId>spring-boot-benchmark-modules</artifactId>
   <packaging>pom</packaging>
+  <modules>
+    <module>spring-boot-benchmark-admin-server</module>
+    <module>spring-boot-benchmark-admin-vaadin</module>
+    <module>spring-boot-benchmark-client</module>
+    <module>spring-boot-benchmark-server</module>
+  </modules>
 </project>
