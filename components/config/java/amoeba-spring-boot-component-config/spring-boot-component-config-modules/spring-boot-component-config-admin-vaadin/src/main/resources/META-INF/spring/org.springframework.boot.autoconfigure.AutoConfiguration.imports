@@ -1,1 +1,1 @@
-org.deepinthink.amoeba.spring.boot.component.broker.admin.vaadin.autoconfigure.BrokerAdminVaadinAutoConfiguration
+org.deepinthink.amoeba.spring.boot.benchmark.admin.vaadin.autoconfigure.BenchmarkAdminVaadinAutoConfiguration

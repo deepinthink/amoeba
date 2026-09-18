@@ -10,6 +10,9 @@
   <artifactId>spring-boot-benchmark-starters</artifactId>
   <packaging>pom</packaging>
   <modules>
+    <module>spring-boot-benchmark-starter-admin-server</module>
+    <module>spring-boot-benchmark-starter-admin-vaadin</module>
+    <module>spring-boot-benchmark-starter-client</module>
     <module>spring-boot-benchmark-starter-server</module>
   </modules>
 </project>

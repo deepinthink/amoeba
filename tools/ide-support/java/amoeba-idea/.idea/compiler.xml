@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-service-admin-admin-vaadin" />
         <module name="spring-boot-starter-component-job-admin-vaadin" />
+        <module name="spring-boot-benchmark-admin-vaadin" />
         <module name="spring-boot-starter-service-admin-admin-vaadin" />
         <module name="spring-boot-starter-service-rbac-client" />
         <module name="spring-boot-component-broker-server" />
@@ -15,6 +16,7 @@
         <module name="spring-boot-pipeline-admin-server" />
         <module name="spring-boot-component-config-server" />
         <module name="spring-boot-starter-vaadin-admin" />
+        <module name="spring-boot-benchmark-admin-server" />
         <module name="spring-boot-component-config-client" />
         <module name="spring-boot-starter-component-broker-server" />
         <module name="spring-boot-autoconfigure" />
@@ -35,6 +37,7 @@
         <module name="spring-boot-pipeline-server" />
         <module name="spring-boot-component-broker-client" />
         <module name="spring-boot" />
+        <module name="spring-boot-benchmark-server" />
         <module name="spring-boot-component-job-admin-server" />
         <module name="devops-rbac-server" />
         <module name="spring-boot-starter-service-admin-admin-server" />
@@ -45,6 +48,7 @@
         <module name="spring-boot-starter-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-server" />
         <module name="spring-boot-socket" />
+        <module name="spring-boot-benchmark-starter-admin-vaadin" />
         <module name="spring-boot-starter-component-broker-admin-server" />
         <module name="spring-boot-starter-service-rbac-admin-server" />
         <module name="spring-boot-actor" />
@@ -54,7 +58,10 @@
         <module name="spring-boot-vaadin" />
         <module name="spring-boot-starter-service-admin-client" />
         <module name="spring-boot-starter-service-rbac-admin-vaadin" />
+        <module name="spring-boot-benchmark-starter-admin-server" />
         <module name="spring-boot-starter-component-config-admin-server" />
+        <module name="spring-boot-benchmark-client" />
+        <module name="spring-boot-benchmark-starter-client" />
         <module name="spring-boot-starter-component-broker-admin-vaadin" />
         <module name="external-socket" />
         <module name="spring-boot-component-config-admin-vaadin" />
