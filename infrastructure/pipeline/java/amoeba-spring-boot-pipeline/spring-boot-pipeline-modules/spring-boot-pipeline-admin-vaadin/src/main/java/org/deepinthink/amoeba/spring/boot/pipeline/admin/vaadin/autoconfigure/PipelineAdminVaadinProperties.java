@@ -24,7 +24,7 @@ public class PipelineAdminVaadinProperties {
   public static final String PREFIX_VIEWS =
       "org.deepinthink.amoeba.spring.boot.pipeline.admin.vaadin.views";
 
-  private String label = "Pipeline";
+  private String label = "Component::Pipeline";
 
   public String getLabel() {
     return label;
