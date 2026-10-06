@@ -17,9 +17,12 @@ package org.deepinthink.amoeba.spring.boot.vaadin.admin.views;
 
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.sidenav.SideNav;
+import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.spring.security.AuthenticationContext;
 import jakarta.annotation.security.PermitAll;
 import org.springframework.beans.factory.ObjectProvider;
+
+import java.util.Comparator;
 
 @PermitAll
 public class VaadinAdminMainLayout extends AppLayout {
@@ -30,7 +33,11 @@ public class VaadinAdminMainLayout extends AppLayout {
       ObjectProvider<VaadinAdminSideNavItemSupplier> provider) {
     addToNavbar(header);
     SideNav sideNav = new SideNav();
-    provider.orderedStream().map(supplier -> supplier.apply(context)).forEach(sideNav::addItem);
+    provider
+        .orderedStream()
+        .map(supplier -> supplier.apply(context))
+        .sorted(Comparator.comparing(SideNavItem::getLabel))
+        .forEach(sideNav::addItem);
     addToDrawer(sideNav);
   }
 }
