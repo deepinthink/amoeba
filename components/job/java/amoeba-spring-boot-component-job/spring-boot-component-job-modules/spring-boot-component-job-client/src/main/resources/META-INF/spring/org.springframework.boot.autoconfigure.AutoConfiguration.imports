@@ -1,1 +1,1 @@
-org.deepinthink.amoeba.spring.boot.component.job.admin.vaadin.autoconfigure.JobAdminVaadinAutoConfiguration
+org.deepinthink.amoeba.spring.boot.component.job.client.autoconfigure.JobClientAutoConfiguration
