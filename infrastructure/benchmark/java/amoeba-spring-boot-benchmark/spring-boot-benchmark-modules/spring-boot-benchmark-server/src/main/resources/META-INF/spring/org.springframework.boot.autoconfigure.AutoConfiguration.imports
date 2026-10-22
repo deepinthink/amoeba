@@ -1,1 +1,1 @@
-org.deepinthink.amoeba.spring.boot.benchmark.server.BenchmarkServerAutoConfiguration
+org.deepinthink.amoeba.spring.boot.benchmark.server.autoconfigure.BenchmarkServerAutoConfiguration
