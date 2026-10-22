@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.deepinthink.amoeba.spring.boot.benchmark.admin.server;
+package org.deepinthink.amoeba.spring.boot.benchmark.admin.server.autoconfigure;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@ConfigurationProperties(prefix = BenchmarkAdminServerProperties.PREFIX)
-public class BenchmarkAdminServerProperties {
-  public static final String PREFIX = "amoeba.benchmark.admin.server";
-}
+@AutoConfiguration
+@EnableConfigurationProperties(BenchmarkAdminServerProperties.class)
+public class BenchmarkAdminServerAutoConfiguration {}
