@@ -10,10 +10,8 @@
   <artifactId>amoeba-external</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>external-actor</module>
     <module>external-dependencies</module>
     <module>external-parent</module>
-    <module>external-socket</module>
   </modules>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>

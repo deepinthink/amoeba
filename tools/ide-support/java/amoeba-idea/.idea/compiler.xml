@@ -63,11 +63,9 @@
         <module name="spring-boot-benchmark-client" />
         <module name="spring-boot-benchmark-starter-client" />
         <module name="spring-boot-starter-component-broker-admin-vaadin" />
-        <module name="external-socket" />
         <module name="spring-boot-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-admin-server" />
         <module name="spring-boot-benchmark-starter-server" />
-        <module name="external-actor" />
         <module name="spring-boot-component-job-admin-vaadin" />
         <module name="spring-boot-starter-webmvc" />
         <module name="spring-boot-service-admin-client" />
@@ -78,6 +76,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="external-actor" target="25" />
+      <module name="external-socket" target="25" />
       <module name="spring-boot-starter (1)" target="25" />
     </bytecodeTargetLevel>
   </component>
