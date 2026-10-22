@@ -23,6 +23,12 @@
         <option value="$PROJECT_DIR$/../../../../components/broker/java/amoeba-spring-boot-component-broker/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../../../../infrastructure/external/java/amoeba-external/external-actor/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../infrastructure/external/java/amoeba-external/external-socket/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_25" project-jdk-name="25" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
