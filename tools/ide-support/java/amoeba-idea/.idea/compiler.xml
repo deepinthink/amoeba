@@ -29,6 +29,7 @@
         <module name="spring-boot-starter-service-admin-server" />
         <module name="spring-boot-starter-socket" />
         <module name="spring-boot-starter-component-config-client" />
+        <module name="spring-boot-starter-benchmark-admin-server" />
         <module name="spring-boot-starter-vaadin" />
         <module name="spring-boot-service-rbac-admin-vaadin" />
         <module name="spring-boot-starter-service-rbac-server" />
@@ -48,7 +49,6 @@
         <module name="spring-boot-starter-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-server" />
         <module name="spring-boot-socket" />
-        <module name="spring-boot-benchmark-starter-admin-vaadin" />
         <module name="spring-boot-starter-component-broker-admin-server" />
         <module name="spring-boot-starter-service-rbac-admin-server" />
         <module name="spring-boot-actor" />
@@ -58,15 +58,15 @@
         <module name="spring-boot-vaadin" />
         <module name="spring-boot-starter-service-admin-client" />
         <module name="spring-boot-starter-service-rbac-admin-vaadin" />
-        <module name="spring-boot-benchmark-starter-admin-server" />
+        <module name="spring-boot-starter-benchmark-server" />
         <module name="spring-boot-starter-component-config-admin-server" />
         <module name="spring-boot-benchmark-client" />
-        <module name="spring-boot-benchmark-starter-client" />
         <module name="spring-boot-starter-component-broker-admin-vaadin" />
         <module name="spring-boot-component-config-admin-vaadin" />
         <module name="spring-boot-service-rbac-admin-server" />
-        <module name="spring-boot-benchmark-starter-server" />
+        <module name="spring-boot-starter-benchmark-admin-vaadin" />
         <module name="spring-boot-component-job-admin-vaadin" />
+        <module name="spring-boot-starter-benchmark-client" />
         <module name="spring-boot-starter-webmvc" />
         <module name="spring-boot-service-admin-client" />
         <module name="spring-boot-component-broker-admin-vaadin" />
