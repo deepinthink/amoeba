@@ -78,6 +78,8 @@
     <bytecodeTargetLevel>
       <module name="external-actor" target="25" />
       <module name="external-socket" target="25" />
+      <module name="maven-build" target="25" />
+      <module name="maven-parent" target="25" />
       <module name="spring-boot-starter (1)" target="25" />
     </bytecodeTargetLevel>
   </component>

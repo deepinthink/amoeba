@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/amoeba-idea.iml" filepath="$PROJECT_DIR$/amoeba-idea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../buildtools/java/amoeba-maven/maven-build-parent/maven-parent.iml" filepath="$PROJECT_DIR$/../../../buildtools/java/amoeba-maven/maven-build-parent/maven-parent.iml" />
     </modules>
   </component>
 </project>
