@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0          http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.deepinthink.amoeba</groupId>
-  <artifactId>maven-build</artifactId>
-  <version>2026.5.0-SNAPSHOT</version>
+  <parent>
+    <groupId>org.deepinthink.amoeba</groupId>
+    <artifactId>maven-build-dependencies</artifactId>
+    <version>2026.5.0-SNAPSHOT</version>
+    <relativePath>../maven-build-dependencies/pom.xml</relativePath>
+  </parent>
+  <artifactId>maven-build-parent</artifactId>
   <packaging>pom</packaging>
   <properties>
-    <slf4j.version>2.0.18</slf4j.version>
-    <logback.version>1.5.34</logback.version>
-    <junit-jupiter.version>6.0.3</junit-jupiter.version>
-    <guava.version>33.6.0-jre</guava.version>
-    <netty.version>4.2.15.Final</netty.version>
-    <protobuf.version>4.34.2</protobuf.version>
-    <protoc.version>3.25.8</protoc.version>
-    <grpc.version>1.80.0</grpc.version>
-    <mockito.version>5.23.0</mockito.version>
-    <vaadin.version>25.2.2</vaadin.version>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
     <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
     <templating-maven-plugin.version>3.1.0</templating-maven-plugin.version>
@@ -91,6 +85,19 @@
               </licenseHeader>
             </java>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>com.vaadin</groupId>
+          <artifactId>vaadin-maven-plugin</artifactId>
+          <version>${vaadin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>build-frontend</goal>
+              </goals>
+              <phase>compile</phase>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>

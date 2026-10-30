@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>maven-parent</artifactId>
+    <artifactId>maven-build-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>../maven-parent/pom.xml</relativePath>
+    <relativePath>../maven-build-parent/pom.xml</relativePath>
   </parent>
   <artifactId>maven-springboot-parent</artifactId>
   <packaging>pom</packaging>
